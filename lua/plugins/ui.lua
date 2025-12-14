@@ -1,11 +1,12 @@
 return {
-	{
-		"rebelot/kanagawa.nvim",
-		lazy = false,
-		config = function()
-			vim.cmd.colorscheme("kanagawa")
-		end,
-	},
+    {
+        "EdenEast/nightfox.nvim",
+        lazy = false,
+        config = function()
+            require("nightfox").setup()
+            vim.cmd.colorscheme("nightfox")
+        end,
+    },
 	{
 		"nvim-treesitter/nvim-treesitter",
 		branch = "master",

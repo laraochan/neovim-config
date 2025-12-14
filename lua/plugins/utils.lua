@@ -122,25 +122,25 @@ return {
 		end,
 	},
     {
-        "folke/which-key.nvim",
-        event = "VeryLazy",
-        config = function()
-            local wk = require("which-key")
-            wk.add({
-                { "<leader>f", group = "Find" },
-                { "<leader>d", group = "Diagnostics" },
-                { "<leader>g", group = "Git" },
-                { "<leader>s", group = "Search" },
-                { "<leader>b", group = "Buffer" },
-                { "<leader>t", group = "Terminal" },
-            })
-        end,
+        "norcalli/nvim-colorizer.lua",
+        opts = {},
     },
     {
         "akinsho/toggleterm.nvim",
-        version = "*",
         opts = {
-            open_mapping = "<leader>t"
+            open_mapping = "<c-t>",
+            direction = "float",
         }
+    },
+    {
+        "mfussenegger/nvim-lint",
+        config = function()
+            require("lint").linters_by_ft = {
+                javascript = { "eslint" },
+                typescript = { "eslint" },
+                javascriptreact = { "eslint" },
+                typescriptreact = { "eslint" },
+            }
+        end,
     }
 }
