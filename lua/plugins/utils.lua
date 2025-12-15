@@ -120,7 +120,7 @@ return {
 			local servers = { "ts_ls" }
 			vim.lsp.enable(servers)
 		end,
-        keymap = {
+        keys = {
             { "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<cr>" }
         }
 	},
