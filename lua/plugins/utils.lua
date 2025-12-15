@@ -122,10 +122,6 @@ return {
 		end,
 	},
     {
-        "norcalli/nvim-colorizer.lua",
-        opts = {},
-    },
-    {
         "akinsho/toggleterm.nvim",
         opts = {
             open_mapping = "<c-t>",

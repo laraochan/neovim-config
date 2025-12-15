@@ -1,6 +1,8 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.g.clipboard = 'osc52'
+
 vim.cmd("filetype indent plugin on")
 vim.cmd("syntax on")
 
