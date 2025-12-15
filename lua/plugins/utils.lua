@@ -39,7 +39,7 @@ return {
 				desc = "Buffers",
 			},
 			{
-				"<leader>sb",
+				"<leader>sg",
 				function()
 					Snacks.picker.grep()
 				end,
