@@ -122,7 +122,8 @@ return {
 			vim.lsp.enable(servers)
 		end,
         keys = {
-            { "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<cr>" }
+            { "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<cr>" },
+            { "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<cr>" }
         }
 	},
     {
