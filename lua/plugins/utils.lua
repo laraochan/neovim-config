@@ -142,5 +142,9 @@ return {
                 typescriptreact = { "eslint" },
             }
         end,
+    },
+    {
+        "lewis6991/gitsigns.nvim",
+        opts = {}
     }
 }
