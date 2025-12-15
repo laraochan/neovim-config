@@ -116,6 +116,7 @@ return {
 	},
 	{
 		"neovim/nvim-lspconfig",
+        lazy = false,
 		config = function()
 			local servers = { "ts_ls" }
 			vim.lsp.enable(servers)
