@@ -121,10 +121,6 @@ return {
 			local servers = { "ts_ls" }
 			vim.lsp.enable(servers)
 		end,
-        keys = {
-            { "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<cr>" },
-            { "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<cr>" }
-        }
 	},
     {
         "akinsho/toggleterm.nvim",
@@ -147,5 +143,34 @@ return {
     {
         "lewis6991/gitsigns.nvim",
         opts = {}
+    },
+    {
+        "ojroques/nvim-osc52",
+        keys = {
+            {
+              "<leader>c",
+              function()
+                return require("osc52").copy_operator()
+              end,
+              mode = "n",
+              expr = true,
+              desc = "OSC52 copy (operator)",
+            },
+            {
+              "<leader>cc",
+              "<leader>c_",
+              mode = "n",
+              remap = true,
+              desc = "OSC52 copy (line)",
+            },
+            {
+              "<leader>c",
+              function()
+                require("osc52").copy_visual()
+              end,
+              mode = "v",
+              desc = "OSC52 copy (visual)",
+            },
+        }
     }
 }
