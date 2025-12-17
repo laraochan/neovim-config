@@ -22,6 +22,7 @@ vim.opt.smartindent = true
 vim.opt.autoindent = true
 vim.opt.cursorline = true
 vim.opt.winborder = "rounded"
+vim.opt.virtualedit = "block"
 
 vim.diagnostic.config({
 	virtual_text = true,
