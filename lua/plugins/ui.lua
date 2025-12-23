@@ -3,7 +3,11 @@ return {
         "EdenEast/nightfox.nvim",
         lazy = false,
         config = function()
-            require("nightfox").setup()
+            require("nightfox").setup({
+                options = {
+                    transparent = true,
+                }
+            })
             vim.cmd.colorscheme("nightfox")
         end,
     },
